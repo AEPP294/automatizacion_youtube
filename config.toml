@@ -1,0 +1,48 @@
+[Directory]
+# Ruta absoluta donde se clona o descarga este proyecto, por ejemplo: Desktop/YoutubeAutomation-Reddit
+path='/home/iot/Youtube/automatizacion_youtube'
+# ----------------------------------------------------------
+[Background]
+# Ruta absoluta del video de fondo, por ejemplo: Desktop/video-reddit.mp4
+path='/home/iot/Youtube/automatizacion_youtube/video-reddit.mp4'
+# ----------------------------------------------------------
+[RedditCredential]
+client_id='TU_CLIENT_ID'
+client_secret='TU_CLIENT_SECRET'
+user_agent='{NOMBRE_APP} v4.0 by /u/{USUARIO_REDDIT}'
+username='USUARIO'
+passkey='CONTRASEÑA'
+# ----------------------------------------------------------
+[YoutubeCredential]
+client_id='CLIENT_ID_GOOGLE_CLOUD'
+client_secret='CLIENT_SECRET_GOOGLE_CLOUD'
+# ----------------------------------------------------------
+[AmazonAWSCredential]
+aws_access_key_id='ACCESS_KEY_AWS'
+aws_secret_access_key='AWS_SECRET_ACCESS_KEY_AWS'
+region_name='us-east-1'
+# ----------------------------------------------------------
+[Reddit]
+# el subreddit del cual se tomarán publicaciones de Reddit
+subreddit='popular'
+# número de comentarios principales
+topn_comments=10
+preferred_language='es'
+# ----------------------------------------------------------
+[VideoSetup]
+# duración total del video final en segundos
+total_video_duration=60
+# pausa entre la lectura de cada comentario (en segundos)
+pause=0.7
+# ----------------------------------------------------------
+[TextToSpeechSetup]
+# si está en true, cada publicación/comentario tendrá una voz aleatoria
+multiple_voices=true
+# si multiple_voices está en false, cada publicación/comentario tendrá la voz especificada
+voice_id='Joanna'
+# ----------------------------------------------------------
+[App]
+# si el video resultante debe ser subido automáticamente a tu canal de YouTube
+upload_to_youtube=true
+# con qué frecuencia debe ejecutarse la app (en segundos), por ejemplo: cada 6 horas -> 21600 segundos
+run_every=21600
